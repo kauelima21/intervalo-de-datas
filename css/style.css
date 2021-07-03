@@ -39,11 +39,16 @@ fieldset button {
     font-weight: bold;
     cursor: pointer;
 }
+fieldset button:hover {
+    background-color: #61DDBC;
+}
 
 .message {
+    margin: 0 auto;
+    width: 500px;
+    padding: 15px;
     border: 2px solid #36BA9B;
     border-radius: .25rem;
-    background: none;
     text-align: center;
     color: #36BA9B;
     font-weight: bold;
