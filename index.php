@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,10 +11,14 @@
 </head>
 <body>
     <?php
-        if (!empty($_SESSION['message'])) {
-            echo $_SESSION['message'];
-            session_destroy();
-        }
+        if (!empty($_SESSION['message'])) :
+            ?>
+            <div class="message">
+                <?= $_SESSION['message'] ?>
+            </div>
+            <?php
+            //session_destroy();
+        endif;
     ?>
     <h1>Calcular o Intervalo das Datas</h1>
     <form method="post" action="calcInterval.php">
