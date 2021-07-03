@@ -7,10 +7,6 @@ $diff = $date_start->diff($date_end);
 
 session_start();
 
-$_SESSION['message'] = <<<MSG
-    <div class='message'>
-        <p>A diferença é de {$diff->days} dias.<p>
-    </div>
-MSG;
+$_SESSION['message'] = "A diferença é de {$diff->days} dias.";
 
 header("location: index.php");
