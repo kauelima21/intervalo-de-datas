@@ -39,3 +39,12 @@ fieldset button {
     font-weight: bold;
     cursor: pointer;
 }
+
+.message {
+    border: 2px solid #36BA9B;
+    border-radius: .25rem;
+    background: none;
+    text-align: center;
+    color: #36BA9B;
+    font-weight: bold;
+}
