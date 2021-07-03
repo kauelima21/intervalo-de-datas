@@ -17,7 +17,7 @@
                 <?= $_SESSION['message'] ?>
             </div>
             <?php
-            //session_destroy();
+            session_destroy();
         endif;
     ?>
     <h1>Calcular o Intervalo das Datas</h1>
